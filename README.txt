@@ -5,4 +5,4 @@
 2. Use a Lombok plugin/extension for your IDE. Project link at https://projectlombok.org
 
 
--- Delivered to the class Engenharia de Software. Prof. Gerson da Penha.
+-- Handed over to the class Engenharia de Software, ministered by Prof. Gerson da Penha.
