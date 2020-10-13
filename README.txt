@@ -5,4 +5,4 @@
 2. Use a Lombok plugin/extension for your IDE. Project link at https://projectlombok.org
 
 
--- Software Engineering class assignment, ministered by Prof. Gerson da Penha.
+-- Software Engineering assignment, class ministered by Prof. Gerson da Penha.
