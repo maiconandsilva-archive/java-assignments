@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="lojavirtual.CalculaPreco" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/CalculaPreco.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="180" y="677"/>    
+    <position height="117" width="314" x="-190" y="578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,25 +12,25 @@
   </class>  
   <interface id="2" language="java" name="lojavirtual.RecebeDesconto" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/RecebeDesconto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="480" y="677"/>    
+    <position height="117" width="176" x="164" y="578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="3" language="java" name="lojavirtual.Desconto" project="lojavirtual" 
+  <class id="3" language="java" name="lojavirtual.Desconto" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/Desconto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="376" y="467"/>    
+    <position height="135" width="216" x="380" y="578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </interface>  
+  </class>  
   <class id="4" language="java" name="lojavirtual.ProdutoUnitario" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/ProdutoUnitario.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="692" y="695"/>    
+    <position height="81" width="184" x="636" y="578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="lojavirtual.DescontoPorcentagem" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/DescontoPorcentagem.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="280" y="228"/>    
+    <position height="153" width="208" x="256" y="843"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="lojavirtual.ProdutoComposto" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/ProdutoComposto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1020" y="601"/>    
+    <position height="225" width="265" x="860" y="578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="lojavirtual.Produto" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/Produto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="728" y="430"/>    
+    <position height="297" width="176" x="452" y="241"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="lojavirtual.Main" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="91" y="441"/>    
+    <position height="99" width="113" x="54" y="241"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="lojavirtual.DescontoAbsoluto" project="lojavirtual" 
     file="/lojavirtual/src/main/java/lojavirtual/DescontoAbsoluto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="526" y="230"/>    
+    <position height="153" width="208" x="504" y="843"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -83,41 +83,49 @@
     </display>  
   </class>  
   <association id="10">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="11" name="produtos"/>      
-      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="11" name="calc"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="13">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
-  <realization id="14">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <realization id="15">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="3"/>  
-  </realization>  
-  <generalization id="16">    
+  <generalization id="14">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
-  <realization id="17">    
+  <association id="15">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="16" name="produtos"/>      
+      <multiplicity id="17" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="18">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <realization id="19">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
   </realization>  
-  <association id="18">    
+  <association id="20">    
     <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="19" name="desconto"/>      
-      <multiplicity id="20" minimum="0" maximum="1"/>    
+      <attribute id="21" name="desconto"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

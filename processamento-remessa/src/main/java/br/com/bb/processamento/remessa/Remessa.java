@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,22 +27,17 @@ public class Remessa {
 //			instancia = new Remessa();
 //		return instancia;
 //	}
-	
-	private static ProcessaRemessa processaRemessaJson;
-	private static ProcessaRemessa processaRemessaXml;
+		
+	private static Reader getReaderFrom(File file) throws FileNotFoundException {
+		return new BufferedReader(new FileReader(file));
+	}
 	
 	public static ProcessaRemessa json(File file) throws FileNotFoundException {
-		if (processaRemessaJson == null)
-			processaRemessaJson = new RemessaJson(
-					new BufferedReader(new FileReader(file)), classes);
-		return processaRemessaJson;
+		return new RemessaJson(getReaderFrom(file), classes);
 	}
 	
 	public static ProcessaRemessa xml(File file) throws FileNotFoundException {
-		if (processaRemessaXml == null)
-			processaRemessaXml = new RemessaXml(
-					new BufferedReader(new FileReader(file)), classes);
-		return processaRemessaXml;
+		return new RemessaXml(getReaderFrom(file), classes);
 	}
 
 	public static List<MetodoPagamento> from(ProcessaRemessa processaRemessa)

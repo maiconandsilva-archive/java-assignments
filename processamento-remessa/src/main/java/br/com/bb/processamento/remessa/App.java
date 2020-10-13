@@ -61,7 +61,7 @@ public class App
 
 	public static void main( String[] args ) throws IOException 
     {
-//		List<MetodoPagamento> remessa = Remessa.from(xml(f("remessa.xml");
+//		List<MetodoPagamento> remessa = Remessa.from(xml(f("remessa.xml")));
 		List<MetodoPagamento> remessa = Remessa.from(json(f("remessa.json")));
 
 		CPFValidator validator = new CPFValidator();

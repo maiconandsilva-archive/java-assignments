@@ -37,11 +37,10 @@ public class Main {
 		Map<String, ContaEstacionamento> contas = new HashMap<>(100);
 		gerenciaContas = new GerenciaContas(calculaCobranca, contas);
 	}
-	
-	
+
 	public void preencherVaga() {
 		System.out.println("===> Preencher vaga");
-		System.out.println("Tipo de ve�culo~:> ");
+		System.out.println("Tipo de veiculo~:> ");
 		System.out.println("0 - Carga");
 		System.out.println("1 - Passeio");
 		System.out.print("~:> ");
@@ -56,7 +55,7 @@ public class Main {
 			veiculo = new VeiculoPasseio();;
 		}
 		
-		System.out.println("===> Digite a placa do ve�culo");
+		System.out.println("===> Digite a placa do veiculo");
 		System.out.print("~:> ");
 		String placa = scanner.nextLine();
 
@@ -87,7 +86,7 @@ public class Main {
 			System.out.println("1 - Adicionar\n");
 			switch (Operacao.values()[Integer.parseInt(scanner.nextLine())]) {
 			case EXIBIR:
-				System.out.println("===> Digite a placa do ve�culo");
+				System.out.println("===> Digite a placa do veiculo");
 				System.out.print("~:> ");
 				main.exibirInfoVaga(scanner.nextLine());
 				break;

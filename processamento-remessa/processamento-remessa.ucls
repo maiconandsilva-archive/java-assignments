@@ -4,17 +4,18 @@
   <class id="1" language="java" name="br.com.bb.processamento.remessa.Remessa" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/Remessa.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="287" x="4" y="151"/>    
+    <position height="-1" width="-1" x="492" y="118"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="br.com.bb.processamento.remessa.RemessaJson" project="processamento-remessa" 
-    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/RemessaJson.java" binary="false" 
+  <class id="2" language="java" name="br.com.bb.processamento.remessa.RemessaXml.MetodosPagamento" 
+    project="processamento-remessa" 
+    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/RemessaXml.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="429" x="182" y="344"/>    
+    <position height="-1" width="-1" x="271" y="670"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,28 +25,28 @@
   <class id="3" language="java" name="br.com.bb.processamento.remessa.CartaoDebito" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/CartaoDebito.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="158" x="452" y="1157"/>    
+    <position height="-1" width="-1" x="271" y="1501"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="br.com.bb.processamento.remessa.RemessaJson.MetodoPagamentoDeserializer" 
+  <class id="4" language="java" name="br.com.bb.processamento.remessa.MetodoPagamento" project="processamento-remessa" 
+    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/MetodoPagamento.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="278" y="962"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="br.com.bb.processamento.remessa.RemessaJson.MetodoPagamentoDeserializer" 
     project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/RemessaJson.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="410" x="182" y="519"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="br.com.bb.processamento.remessa.CartaoCredito" project="processamento-remessa" 
-    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/CartaoCredito.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="207" width="158" x="650" y="1157"/>    
+    <position height="-1" width="-1" x="726" y="697"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -55,17 +56,17 @@
   <class id="6" language="java" name="br.com.bb.processamento.remessa.RemessaXml" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/RemessaXml.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="335" x="849" y="344"/>    
+    <position height="-1" width="-1" x="336" y="522"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="br.com.bb.processamento.remessa.MetodoPagamento" project="processamento-remessa" 
-    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/MetodoPagamento.java" binary="false" 
+  <class id="7" language="java" name="br.com.bb.processamento.remessa.CartaoCredito" project="processamento-remessa" 
+    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/CartaoCredito.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="333" width="379" x="651" y="519"/>    
+    <position height="-1" width="-1" x="469" y="1528"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +76,7 @@
   <class id="8" language="java" name="br.com.bb.processamento.remessa.Cartao" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/Cartao.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="225" width="158" x="551" y="892"/>    
+    <position height="-1" width="-1" x="271" y="1272"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -85,7 +86,7 @@
   <class id="9" language="java" name="br.com.bb.processamento.remessa.App" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/App.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="153" width="196" x="529" y="151"/>    
+    <position height="-1" width="-1" x="810" y="136"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -95,7 +96,7 @@
   <class id="10" language="java" name="br.com.bb.processamento.remessa.Boleto" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/Boleto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="158" x="749" y="892"/>    
+    <position height="-1" width="-1" x="469" y="1254"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -105,39 +106,89 @@
   <class id="11" language="java" name="br.com.bb.processamento.remessa.ProcessaRemessa" project="processamento-remessa" 
     file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/ProcessaRemessa.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="240" x="765" y="151"/>    
+    <position height="-1" width="-1" x="481" y="347"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <generalization id="13">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="7"/>  
-  </generalization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="11"/>  
-  </generalization>  
+  <class id="12" language="java" name="br.com.bb.processamento.remessa.RemessaJson" project="processamento-remessa" 
+    file="/processamento-remessa/src/main/java/br/com/bb/processamento/remessa/RemessaJson.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="735" y="522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="13">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="14" name="rMetodoPagamento">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </attribute>      
+      <multiplicity id="15" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <generalization id="16">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="11"/>  
   </generalization>  
-  <nesting id="17">    
-    <end type="SOURCE" refId="2"/>    
+  <association id="17">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="18" name="processaRemessaJson">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="21" name="processaRemessaXml">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1644" y="-1096"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="23">    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <nesting id="27">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
   </nesting>  
-  <generalization id="18">    
-    <end type="SOURCE" refId="5"/>    
+  <nesting id="28">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

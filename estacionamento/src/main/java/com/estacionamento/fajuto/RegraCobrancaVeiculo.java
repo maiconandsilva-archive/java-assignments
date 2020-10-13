@@ -7,7 +7,7 @@ import lombok.Setter;
 
 public abstract class RegraCobrancaVeiculo {
 	
-	@Getter @Setter private Map<Class<?>, Double> valoresCobrancas;
+	@Getter @Setter protected Map<Class<?>, Double> valoresCobrancas;
 
 	public abstract boolean isAplicavel(Veiculo veiculo);
 
