@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class GerenciaContas {
 	
-	private final CalculaValor calculaCobranca;
+	private final CalculaValorCobranca calculaCobranca;
 	
 	private Map<String, ContaEstacionamento> contas;
 	
@@ -24,8 +24,7 @@ public class GerenciaContas {
 	}
 	
 	public ContaEstacionamento finalizar(String placaVeiculo) {
-		ContaEstacionamento conta = contas.get(placaVeiculo);
-		conta.setFim(now());
+		ContaEstacionamento conta = getConta(placaVeiculo);
 		conta.setFinalizada(true);
 		return conta;
 	}

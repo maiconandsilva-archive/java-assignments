@@ -5,31 +5,23 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.WeakHashMap;
 
 public class Main {
 
 	private static Scanner scanner = new Scanner(System.in);
 	private static enum Operacao { EXIBIR, ADICIONAR, ATUALIZAR, REMOVER, SAIR }
 	private static enum TipoVeiculoEnum { PASSEIO, CARGA }
+	private static GerenciaContas gerenciaContas;
 	
-	private GerenciaContas gerenciaContas;
-	
-	{
-		CalculaValor calculaCobranca = new CalculaValor();
+	static {
+		CalculaValorCobranca calculaCobranca = new CalculaValorCobranca();
 		calculaCobranca.setCalculos(Arrays.asList(new CalculoCobranca[] {
-				new CobrancaHora(CobrancaTempo.INICIO_TERMINO_COBRANCA, 15 * Data.HORA),
-				new CobrancaDia(12 * Data.HORA, 15 * Data.DIA),
-				new CobrancaMes(15 * Data.DIA, CobrancaTempo.INICIO_TERMINO_COBRANCA)
+			new CobrancaTempo(CobrancaTempo.INICIO_TERMINO_COBRANCA, 15 * Data.HORA, Data.HORA, 12.0),
+			new CobrancaTempo(12 * Data.HORA, 15 * Data.DIA, Data.DIA, 26.0),
+			new CobrancaTempo(15 * Data.DIA, CobrancaTempo.INICIO_TERMINO_COBRANCA, Data.MES, 300.0)
 		}));
 		
-		Map<Class<?>, Double> valores = new WeakHashMap<>();
-		valores.put(CobrancaHora.class, 12.0);
-		valores.put(CobrancaDia.class, 26.0);
-		valores.put(CobrancaMes.class, 300.0);
-		
 		RegraCobrancaVeiculo regra = new RegraCobrancaVeiculoFallback();
-		regra.setValoresCobrancas(valores);
 
 		Veiculo.setRegraCobrancaVeiculo(new ArrayList<RegraCobrancaVeiculo>());
 		Veiculo.getRegraCobrancaVeiculo().add(regra);
@@ -38,7 +30,7 @@ public class Main {
 		gerenciaContas = new GerenciaContas(calculaCobranca, contas);
 	}
 
-	public void preencherVaga() {
+	public static void preencherVaga() {
 		System.out.println("===> Preencher vaga");
 		System.out.println("Tipo de veiculo~:> ");
 		System.out.println("0 - Carga");
@@ -58,8 +50,6 @@ public class Main {
 		System.out.println("===> Digite a placa do veiculo");
 		System.out.print("~:> ");
 		String placa = scanner.nextLine();
-
-
 		
 		veiculo.setPlaca(placa);
 		gerenciaContas.iniciar(veiculo.getPlaca(), veiculo);
@@ -67,7 +57,7 @@ public class Main {
 		exibirInfoVaga(veiculo.getPlaca());
 	}
 	
-	public void exibirInfoVaga(String placaVeiculo) {
+	public static void exibirInfoVaga(String placaVeiculo) {
 		ContaEstacionamento conta = gerenciaContas.getConta(placaVeiculo);
 		
 		System.out.printf("\nValor ~:> %.2f\n", gerenciaContas.calcularCobranca(placaVeiculo));
@@ -77,29 +67,33 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		
-		Main main = new Main();
-		
+		SAIR:
 		while (true) {
-			System.out.println("\n\n===> Operacoes");
-			System.out.println("0 - Exibir");
-			System.out.println("1 - Adicionar\n");
-			switch (Operacao.values()[Integer.parseInt(scanner.nextLine())]) {
-			case EXIBIR:
-				System.out.println("===> Digite a placa do veiculo");
-				System.out.print("~:> ");
-				main.exibirInfoVaga(scanner.nextLine());
-				break;
-			case ADICIONAR:
-				main.preencherVaga();
-				break;
-			case ATUALIZAR:
-			case REMOVER:
-			case SAIR:
-			default:
+			try {
+				System.out.println("\n\n===> Operacoes");
+				System.out.println("0 - Exibir");
+				System.out.println("1 - Adicionar");
+				System.out.println("4 - Sair\n");
+				switch (Operacao.values()[Integer.parseInt(scanner.nextLine())]) {
+					case EXIBIR:
+						System.out.println("===> Digite a placa do veiculo");
+						System.out.print("~:> ");
+						exibirInfoVaga(scanner.nextLine());
+						break;
+					case ADICIONAR:
+						preencherVaga();
+						break;
+					case ATUALIZAR:
+					case REMOVER:
+						break;
+					case SAIR:
+						break SAIR;
+				}
+			} catch (Exception ignored) {
+				System.out.println("Something went wrong. You may have mistyped. Try again.");
 			}
 		}
-
+		System.out.println("Shutting down ...");
 	}
 
 }

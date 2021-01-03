@@ -8,8 +8,8 @@ public class RegraCobrancaVeiculoFallback extends RegraCobrancaVeiculo {
 	}
 
 	@Override
-	public double getValorBase(Class<?> cobranca) {
-		return valoresCobrancas.get(cobranca);
+	public double getValorBase(CalculoCobranca cobranca) {
+		return cobranca.getValorBase();
 	}
 
 }

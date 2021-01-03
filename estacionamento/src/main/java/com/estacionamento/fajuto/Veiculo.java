@@ -24,13 +24,14 @@ public abstract class Veiculo {
 	 * 
 	 */
 	@SneakyThrows(Exception.class)
-	public double getValorBase(Class<?> cobranca)  {
+	public double getValorBase(CalculoCobranca cobranca)  {
+		double valorBase = 0;
 		for (RegraCobrancaVeiculo regra : regraCobrancaVeiculo) {
 			if (regra.isAplicavel(this)) {
-				return regra.getValorBase(cobranca);
+				valorBase += regra.getValorBase(cobranca);
 			}
 		}
-		throw new RuntimeException("ALGORITMO NAO FUNCIONA!!!!");
+		return valorBase;
 	}
 
 } 
